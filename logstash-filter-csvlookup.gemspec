@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-filter-csvlookup'
   s.version         = '0.1.4'
-  s.licenses = ['Apache License (2.0)']
-  s.summary = "This csvlookup filter replaces the contents of a field with a value taken from a csv file."
+  s.licenses = ['THE BEER-WARE LICENSE (Revision 42)']
+  s.summary = "This csvlookup filter enrich contents using a value taken from a csv file."
   s.description = "This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/plugin install gemname. This gem is not a stand-alone program"
   s.authors = ["Adesis"]
   s.email = 'javier.antoniucci@adesis.com'
@@ -11,8 +11,6 @@ Gem::Specification.new do |s|
 
   # Files
   s.files = `git ls-files`.split($\)
-   # Tests
-  s.test_files = s.files.grep(%r{^(test|spec|features)/})
 
   # Special flag to let us know this is actually a logstash plugin
   s.metadata = { "logstash_plugin" => "true", "logstash_group" => "filter" }
